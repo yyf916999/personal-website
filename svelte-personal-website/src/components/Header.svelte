@@ -4,7 +4,8 @@
   let names = [
     "Hi, I am Yufan Yang",
     "I am a Full-Stack Software Engineer",
-    "I love Coding",
+    "I Hate Coding",
+    "我爱写码",
   ];
   let currentNameIndex = 0;
   let currentName = "";
@@ -14,7 +15,7 @@
     if (typing) {
       if (currentName.length < names[currentNameIndex].length) {
         currentName += names[currentNameIndex][currentName.length];
-        setTimeout(typeWriterEffect, 100); // Typing speed
+        setTimeout(typeWriterEffect, 150); // Typing speed
       } else {
         typing = false;
         setTimeout(typeWriterEffect, 1500); // Pause before deleting
@@ -52,7 +53,8 @@
     align-items: center;
     padding: 2rem;
     color: #fff;
-    background-image: url("/assets/header-background.jpg");
+    background-color: green;
+    /* background-image: url("/assets/header-background.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
