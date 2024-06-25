@@ -1,21 +1,19 @@
 <script>
   import { onMount } from "svelte";
-
+  let name = "Yufan Yang";
+  let tagline = "";
   let names = [
-    "Hi, I am Yufan Yang",
-    "I am a Full-Stack Software Engineer",
-    "I Hate Coding",
-    "我爱写码",
+    "I am a Full-Stack Software Developer",
+    "I Turn Ideas Into Reality",
   ];
   let currentNameIndex = 0;
   let currentName = "";
   let typing = true;
-
   function typeWriterEffect() {
     if (typing) {
       if (currentName.length < names[currentNameIndex].length) {
         currentName += names[currentNameIndex][currentName.length];
-        setTimeout(typeWriterEffect, 150); // Typing speed
+        setTimeout(typeWriterEffect, 50); // Typing speed
       } else {
         typing = false;
         setTimeout(typeWriterEffect, 1500); // Pause before deleting
@@ -31,50 +29,136 @@
       }
     }
   }
-
   onMount(() => {
     typeWriterEffect();
   });
 </script>
 
 <header>
-  <h1>{currentName}</h1>
   <nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">
+      <img id="letter-y" src="/assets/letter-y.png" />{name}
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contacts</a>
+    </div>
   </nav>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>{name}</h1>
+      <p class="tagline">{currentName}</p>
+      <button class="contact-button">Contact</button>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/pfp.png" alt={name} />
+    </div>
+  </div>
 </header>
 
 <style>
   header {
+    /* background: url("/assets/header-background.jpg") no-repeat center center; */
+    background-color: #f0f0f0;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    color: #fff;
-    background-color: green;
-    /* background-image: url("/assets/header-background.jpg"); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 300px; /* Adjust the height as needed */
-  }
-
-  h1 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    min-height: 1.5em; /* Ensure space is reserved for text */
   }
 
   nav {
-    margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 10rem 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f0f0f0;
+  }
+  nav:after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid black;
+    width: 90%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    left: 50%;
+  }
+  .logo {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    gap: 0.5rem;
+  }
+  #letter-y {
+    max-width: 1.5rem;
+    max-height: 2rem;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
   }
 
-  nav a {
-    margin: 0 1rem;
-    color: #fff;
+  .nav-links a {
+    color: black;
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 5rem; /* Adjust as needed */
+  }
+
+  .hero-text {
+    max-width: 50%;
+    text-align: left;
+    color: black;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 2rem 0;
+    min-height: 1.5em;
+  }
+
+  .contact-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f04e4e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .contact-button:hover {
+    background-color: #d43d3d;
+  }
+
+  .hero-image img {
+    /* max-width: 500px; */
+    border-radius: 10px;
   }
 </style>

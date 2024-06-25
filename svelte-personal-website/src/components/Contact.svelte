@@ -2,7 +2,7 @@
   <h2>Contact</h2>
   <p>
     You can reach me at <a href="mailto:your.email@example.com"
-      >yang.yfuan.916@gmail.com</a
+      >your.email@example.com</a
     >.
   </p>
 </section>

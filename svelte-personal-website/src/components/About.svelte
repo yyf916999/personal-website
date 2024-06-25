@@ -1,17 +1,17 @@
 <script>
   let skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "WordPress",
-    "PHP",
-    "SASS",
-    "GIT",
-    "Github",
-    "Responsive Design",
-    "SEO",
-    "Terminal",
+    { name: "HTML", icon: "devicon-html5-plain colored" },
+    { name: "CSS", icon: "devicon-css3-plain colored" },
+    { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+    { name: "React", icon: "devicon-react-plain colored" },
+    { name: "Python", icon: "devicon-python-plain colored" },
+    { name: "Flask", icon: "devicon-flask-original colored" },
+    { name: "C/C++", icon: "devicon-cplusplus-plain colored" },
+    { name: "GIT", icon: "devicon-git-plain colored" },
+    { name: "Docker", icon: "devicon-docker-plain colored" },
+    { name: "Kubernetes", icon: "devicon-kubernetes-plain colored" },
+    { name: "Go", icon: "devicon-go-plain colored" },
+    { name: "Linux", icon: "devicon-linux-plain colored" },
   ];
 </script>
 
@@ -47,8 +47,11 @@
     <div class="skills">
       <h3>My Skills</h3>
       <div class="skills-grid">
-        {#each skills as skill}
-          <span class="skill">{skill}</span>
+        {#each skills as { name, icon }}
+          <div class="skill">
+            <i class={icon}></i>
+            {name}
+          </div>
         {/each}
       </div>
     </div>
@@ -113,10 +116,17 @@
   }
 
   .skill {
-    background-color: #e0e0e0;
+    background-color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .skill i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
   }
 
   a {
