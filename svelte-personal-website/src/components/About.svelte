@@ -17,14 +17,9 @@
 
 <section id="about">
   <h2>ABOUT ME</h2>
-  <p>
-    Here you will find more information about me, what I do, and my current
-    skills mostly in terms of programming and technology.
-  </p>
 
   <div class="about-content">
     <div class="description">
-      <h3>Get to know me!</h3>
       <p>
         I'm a <strong>Frontend Focused Web Developer</strong> building and managing
         the Front-end of Websites and Web Applications that leads to the success
