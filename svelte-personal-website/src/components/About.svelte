@@ -23,15 +23,8 @@
       <p></p>
       <p>I hate leetcode with a passionate</p>
       <p>
-        Hi! I'm Yufan Yang, a passionate coder with a keen interest in creating
-        innovative and efficient solutions through programming. With a strong
-        foundation in computer science and hands-on experience in various
-        programming languages, I enjoy tackling complex problems and bringing
-        ideas to life through code. Whether it's developing web applications,
-        working on open-source projects, or exploring new technologies, I am
-        always excited to learn and grow in the ever-evolving tech landscape.
-        Welcome to my coding projects portfolio, where I showcase my work and
-        share my journey in the world of software development.
+        Hi! I'm Yufan! I love create new things with code! In my free time, I
+        enjoy dancing and rapping.
       </p>
     </div>
     <div class="skills">
