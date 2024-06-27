@@ -13,6 +13,8 @@
   #resume {
     padding: 2rem;
     background-color: #f9f9f9;
+    height: 150%;
+    max-width: 100%;
   }
 
   h2 {
