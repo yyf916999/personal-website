@@ -20,23 +20,18 @@
 
   <div class="about-content">
     <div class="description">
+      <p></p>
+      <p>I hate leetcode with a passionate</p>
       <p>
-        I'm a <strong>Frontend Focused Web Developer</strong> building and managing
-        the Front-end of Websites and Web Applications that leads to the success
-        of the overall product. Check out some of my work in the Projects section.
-      </p>
-      <p>
-        I also like sharing content related to the stuff that I have learned
-        over the years in <strong>Web Development</strong> so it can help other
-        people of the Dev Community. Feel free to Connect or Follow me on my
-        <a href="#">LinkedIn</a>
-        and <a href="#">Instagram</a> where I post useful content related to Web
-        Development and Programming.
-      </p>
-      <p>
-        I'm open to <strong>Job</strong> opportunities where I can contribute,
-        learn, and grow. If you have a good opportunity that matches my skills
-        and experience, then don't hesitate to <strong>contact</strong> me.
+        Hi! I'm Yufan Yang, a passionate coder with a keen interest in creating
+        innovative and efficient solutions through programming. With a strong
+        foundation in computer science and hands-on experience in various
+        programming languages, I enjoy tackling complex problems and bringing
+        ideas to life through code. Whether it's developing web applications,
+        working on open-source projects, or exploring new technologies, I am
+        always excited to learn and grow in the ever-evolving tech landscape.
+        Welcome to my coding projects portfolio, where I showcase my work and
+        share my journey in the world of software development.
       </p>
     </div>
     <div class="skills">

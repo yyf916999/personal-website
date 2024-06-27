@@ -43,6 +43,7 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contacts">Contacts</a>
+      <a href="#resume">Resume</a>
     </div>
   </nav>
 

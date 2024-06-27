@@ -1,8 +1,8 @@
 <section id="contact">
   <h2>Contact</h2>
   <p>
-    You can reach me at <a href="mailto:your.email@example.com"
-      >your.email@example.com</a
+    You can reach me at <a href="mailto:yang.yufan.916@gmail.com"
+      >yang.yufan.916@gmail.com</a
     >.
   </p>
 </section>
