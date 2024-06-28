@@ -20,11 +20,22 @@
 
   <div class="about-content">
     <div class="description">
-      <p></p>
-      <p>I hate leetcode with a passionate</p>
       <p>
-        Hi! I'm Yufan! I love create new things with code! In my free time, I
-        enjoy dancing and rapping.
+        Hi there! I'm Yufan Yang, a passionate Software Developer with a knack
+        for creating innovative and efficient web applications. With a strong
+        foundation in various programming languages and technologies, I thrive
+        on turning complex problems into elegant solutions.
+      </p>
+      <p>
+        When I'm not coding, you can find me dancing to the latest beats,
+        rapping with friends, or immersing myself in the world of video games.
+        These hobbies not only keep me energized but also inspire my creative
+        thinking and problem-solving skills.
+      </p>
+      <p>
+        I believe in continuous learning and always strive to stay updated with
+        the latest trends in technology. Let's connect and create something
+        amazing together!
       </p>
     </div>
     <div class="skills">
