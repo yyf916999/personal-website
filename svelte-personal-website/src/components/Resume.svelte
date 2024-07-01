@@ -3,7 +3,7 @@
 </script>
 
 <section id="resume">
-  <h2>Resume</h2>
+  <h2>Resume1</h2>
   <div class="pdf-container">
     <iframe src="/assets/resume.pdf" width="100%" height="600px"></iframe>
   </div>
