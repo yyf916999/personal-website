@@ -4,11 +4,13 @@
   import Contact from "./components/Contact.svelte";
   import Resume from "./components/Resume.svelte";
   import Videos from "./components/Video.svelte";
+  import WorkExperience from "./components/WorkExperience.svelte";
 </script>
 
 <main>
   <Header name="Yufan Yang" />
   <About />
+  <WorkExperience />
   <Resume />
   <Videos />
   <Contact />

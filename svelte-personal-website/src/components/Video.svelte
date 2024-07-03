@@ -7,7 +7,7 @@
     },
     {
       title: "Turn down your volume",
-      url: "/assets/nathan.mp4",
+      url: "/assets/",
     },
     {
       title: "Gaming Highlights",
