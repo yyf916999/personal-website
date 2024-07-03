@@ -10,8 +10,8 @@
       url: "/assets/",
     },
     {
-      title: "Gaming Highlights",
-      url: "https://www.youtube.com/watch?v=I5lq6sCuABE&ab_channel=theroadmap",
+      title: "I want to learn this next",
+      url: "https://www.youtube.com/embed/OMcOAkoa8oM",
     },
   ];
 </script>

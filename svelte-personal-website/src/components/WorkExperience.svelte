@@ -1,40 +1,39 @@
 <script>
   let experiences = [
     {
+      role: "Editor",
+      company: "ABC Corp",
       period: "2035 - Present",
-      position: "Web Content Writer",
-      company: "My Bite",
-      location: "San Francisco, Cal.",
+      description:
+        "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
     },
     {
+      role: "Writer at Large",
+      company: "XYZ Ltd",
       period: "2035 - 2035",
-      position: "Content Writer",
-      company: "Unilife",
-      location: "Manhattan, New York",
+      description:
+        "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
     },
     {
+      role: "Intern",
+      company: "123 Inc",
       period: "2035 - 2035",
-      position: "Content Writer Intern",
-      company: "InspirationIT",
-      location: "San Francisco, Cal.",
+      description:
+        "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
     },
   ];
 </script>
 
 <section id="work-experience">
-  <div class="header">
-    <h2>WORK EXPERIENCE</h2>
-    <a class="resume-button" href="/assets/resume.pdf" download
-      >Download Resume</a
-    >
-  </div>
+  <h2>Work Experience</h2>
   <div class="experience-list">
-    {#each experiences as experience}
+    {#each experiences as { role, company, period, description }}
       <div class="experience-item">
-        <p class="period"><strong>{experience.period}</strong></p>
-        <p class="position">{experience.position}</p>
-        <p class="company">{experience.company}</p>
-        <p class="location"><em>{experience.location}</em></p>
+        <div class="period">{period}</div>
+        <div class="details">
+          <h4>{role} at {company}</h4>
+          <p>{description}</p>
+        </div>
       </div>
     {/each}
   </div>
@@ -43,66 +42,50 @@
 <style>
   #work-experience {
     padding: 2rem;
-    background-color: #fff;
-  }
-
-  .header {
+    background-color: #f9f9f9;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
   }
 
   h2 {
+    text-align: left;
     font-size: 2rem;
-    position: relative;
-  }
-
-  h2::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 2px;
-    background: black;
-    margin: 0.5rem auto 0;
-  }
-
-  .resume-button {
-    background-color: #f04e4e;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
-  .resume-button:hover {
-    background-color: #d43d3d;
+    margin-left: 7%;
+    /* margin-bottom: 2rem; */
   }
 
   .experience-list {
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .experience-item {
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
   }
 
   .period {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #333;
+    width: 25%;
+    min-width: 150px; /* Ensures the date section has a minimum width */
+    text-align: right;
+    padding-right: 1rem;
   }
 
-  .position {
+  .details {
+    font-size: 1rem;
+    width: 75%;
+  }
+
+  .details h4 {
+    margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
   }
 
-  .company,
-  .location {
-    font-size: 1rem;
-    color: gray;
+  .details p {
+    margin: 0.5rem 0 0 0;
+    color: #555;
   }
 </style>
