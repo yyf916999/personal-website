@@ -51,7 +51,9 @@
     <div class="hero-text">
       <h1>{name}</h1>
       <p class="tagline">{currentName}</p>
-      <button class="contact-button">Contact</button>
+      <a class="resume-button" href="/assets/Yufan-Yang-Resume.pdf" download
+        >Download Resume</a
+      >
     </div>
     <div class="hero-image">
       <img src="/assets/pfp.png" alt={name} />
@@ -144,7 +146,7 @@
     min-height: 1.5em;
   }
 
-  .contact-button {
+  /* .contact-button {
     padding: 0.75rem 1.5rem;
     background-color: #f04e4e;
     border: none;
@@ -156,10 +158,23 @@
 
   .contact-button:hover {
     background-color: #d43d3d;
-  }
+  } */
 
   .hero-image img {
     /* max-width: 500px; */
     border-radius: 10px;
+  }
+  .resume-button {
+    background-color: #f04e4e;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .resume-button:hover {
+    background-color: #d43d3d;
   }
 </style>

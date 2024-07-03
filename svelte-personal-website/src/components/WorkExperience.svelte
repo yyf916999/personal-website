@@ -43,13 +43,12 @@
   #work-experience {
     padding: 2rem;
     background-color: #f9f9f9;
-    display: flex;
   }
 
   h2 {
-    text-align: left;
-    font-size: 2rem;
-    margin-left: 7%;
+    /* text-align: left; */
+    font-size: 7rem;
+    /* margin-left: 10%; */
     /* margin-bottom: 2rem; */
   }
 

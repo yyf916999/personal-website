@@ -16,38 +16,30 @@
 </script>
 
 <section id="about">
-  <h2>ABOUT ME</h2>
-
   <div class="about-content">
     <div class="description">
+      <h2>Hello!</h2>
       <p>
-        Hi there! I'm Yufan Yang, a passionate Software Developer with a knack
-        for creating innovative and efficient web applications. With a strong
-        foundation in various programming languages and technologies, I thrive
-        on turning complex problems into elegant solutions.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm Yufan Yang, a full-stack
+        software developer located in Denver, CO. I have a knock for creating
+        innovative and efficient applications like this website you are visiting
+        right now.
       </p>
       <p>
-        When I'm not coding, you can find me dancing to the latest beats,
-        rapping with friends, or immersing myself in the world of video games.
-        These hobbies not only keep me energized but also inspire my creative
-        thinking and problem-solving skills.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When I'm not coding, you can find
+        me dancing to the latest beats, rapping with friends, or immersing
+        myself in the world of video games. These hobbies not only keep me
+        energized but also inspire my creative thinking and problem-solving
+        skills.
       </p>
       <p>
-        I believe in continuous learning and always strive to stay updated with
-        the latest trends in technology. Let's connect and create something
-        amazing together!
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I believe in continuous learning
+        and always strive to stay updated with the latest trends in technology.
+        Let's connect and create something amazing together!
       </p>
     </div>
-    <div class="skills">
-      <h3>My Skills</h3>
-      <div class="skills-grid">
-        {#each skills as { name, icon }}
-          <div class="skill">
-            <i class={icon}></i>
-            {name}
-          </div>
-        {/each}
-      </div>
+    <div class="software-pic">
+      <img src="/assets/software.jpg" />
     </div>
   </div>
 </section>
@@ -55,20 +47,19 @@
 <style>
   section {
     padding: 2rem 1rem;
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
   }
 
   h2 {
-    text-align: center;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 7rem;
     font-weight: bold;
   }
 
   p {
-    text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem 0 0 0;
+    line-height: 1.8;
   }
 
   .about-content {
@@ -77,7 +68,7 @@
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0 1rem;
     box-sizing: border-box;
@@ -88,39 +79,8 @@
     margin-right: 5rem; /* Increase the margin to add more space */
   }
 
-  .skills {
+  .software-pic {
     flex: 1;
-  }
-
-  .description h3,
-  .skills h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-  }
-
-  .description p {
-    margin-bottom: 1rem;
-  }
-
-  .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .skill {
-    background-color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .skill i {
-    margin-right: 0.5rem;
-    font-size: 1.2rem;
   }
 
   a {
