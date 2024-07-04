@@ -1,20 +1,3 @@
-<script>
-  let skills = [
-    { name: "HTML", icon: "devicon-html5-plain colored" },
-    { name: "CSS", icon: "devicon-css3-plain colored" },
-    { name: "JavaScript", icon: "devicon-javascript-plain colored" },
-    { name: "React", icon: "devicon-react-plain colored" },
-    { name: "Python", icon: "devicon-python-plain colored" },
-    { name: "Flask", icon: "devicon-flask-original colored" },
-    { name: "C/C++", icon: "devicon-cplusplus-plain colored" },
-    { name: "GIT", icon: "devicon-git-plain colored" },
-    { name: "Docker", icon: "devicon-docker-plain colored" },
-    { name: "Kubernetes", icon: "devicon-kubernetes-plain colored" },
-    { name: "Go", icon: "devicon-go-plain colored" },
-    { name: "Linux", icon: "devicon-linux-plain colored" },
-  ];
-</script>
-
 <section id="about">
   <div class="about-content">
     <div class="description">

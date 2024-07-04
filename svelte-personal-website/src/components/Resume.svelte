@@ -5,7 +5,8 @@
 <section id="resume">
   <h2>Resume</h2>
   <div class="pdf-container">
-    <iframe src="/assets/resume.pdf" width="100%" height="600px"></iframe>
+    <iframe src="/assets/Yufan-Yang-Resume.pdf" width="100%" height="600px"
+    ></iframe>
   </div>
 </section>
 

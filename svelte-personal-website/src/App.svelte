@@ -5,11 +5,13 @@
   import Resume from "./components/Resume.svelte";
   import Videos from "./components/Video.svelte";
   import WorkExperience from "./components/WorkExperience.svelte";
+  import Skills from "./components/Skills.svelte";
 </script>
 
 <main>
   <Header name="Yufan Yang" />
   <About />
+  <Skills />
   <WorkExperience />
   <Resume />
   <Videos />
