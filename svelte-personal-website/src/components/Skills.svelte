@@ -108,10 +108,6 @@
   function showDetails(skill) {
     selectedSkill = skill;
   }
-
-  function closeModal() {
-    selectedSkill = null;
-  }
 </script>
 
 <section id="skills">
@@ -134,55 +130,13 @@
 </section>
 
 {#if selectedSkill}
-  <div id="skillModal" class="modal" on:click={closeModal}>
-    <div class="modal-content" on:click|stopPropagation>
-      <span class="close" on:click={closeModal}>&times;</span>
-      <h2 id="skillName">{selectedSkill.name}</h2>
-      <p id="skillDetails">{selectedSkill.details}</p>
-    </div>
+  <div class="details-panel">
+    <h2>{selectedSkill.name}</h2>
+    <p>{selectedSkill.details}</p>
   </div>
 {/if}
 
 <style>
-  .modal {
-    /* display: {
-      selectedskill? 'block' : "none";
-    } */
-    position: fixed;
-    z-index: 1;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-  }
-
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
   .skill-content {
     display: flex;
     flex-direction: row;
@@ -241,7 +195,7 @@
 
   h2 {
     margin-bottom: 1rem;
-    font-size: 7rem;
+    font-size: 2rem;
     font-weight: bold;
   }
 
@@ -268,5 +222,14 @@
 
   .software-pic {
     flex: 1;
+  }
+
+  .details-panel {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 </style>
