@@ -103,23 +103,15 @@
     },
   ];
 
-  function showDetails(name) {
-    const skill = skills.find((s) => s.name === name);
-    document.getElementById("skillName").innerText = skill.name;
-    document.getElementById("skillDetails").innerText = skill.details;
-    document.getElementById("skillModal").style.display = "block";
+  let selectedSkill = null;
+
+  function showDetails(skill) {
+    selectedSkill = skill;
   }
 
   function closeModal() {
-    document.getElementById("skillModal").style.display = "none";
+    selectedSkill = null;
   }
-
-  window.onclick = function (event) {
-    const modal = document.getElementById("skillModal");
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
 </script>
 
 <section id="skills">
@@ -131,10 +123,9 @@
     </div>
     <div class="skills-icons">
       <div class="skills-grid">
-        {#each skills as { name, icon }}
-          <div class="skill" onclick="showDetails('{name}')">
-            <i class={icon}></i>
-            {name}
+        {#each skills as skill}
+          <div class="skill" on:click={() => showDetails(skill)}>
+            <i class={skill.icon}></i>{skill.name}
           </div>
         {/each}
       </div>
@@ -142,18 +133,21 @@
   </div>
 </section>
 
-<!-- Modal Structure -->
-<div id="skillModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2 id="skillName"></h2>
-    <p id="skillDetails"></p>
+{#if selectedSkill}
+  <div id="skillModal" class="modal" on:click={closeModal}>
+    <div class="modal-content" on:click|stopPropagation>
+      <span class="close" on:click={closeModal}>&times;</span>
+      <h2 id="skillName">{selectedSkill.name}</h2>
+      <p id="skillDetails">{selectedSkill.details}</p>
+    </div>
   </div>
-</div>
+{/if}
 
 <style>
   .modal {
-    display: none;
+    /* display: {
+      selectedskill? 'block' : "none";
+    } */
     position: fixed;
     z-index: 1;
     padding-top: 60px;
