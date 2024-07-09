@@ -115,7 +115,7 @@
   <div class="skill-content">
     <div class="skills-description">
       <p>Some tech-related skills I have learnt and used over the years.</p>
-      <p>Click on each icon for more details</p>
+      <p>Click on each icon for more detailss</p>
     </div>
     <div class="skills-icons">
       <div class="skills-grid">
