@@ -99,7 +99,7 @@
       name: "Jira",
       icon: "devicon-jira-plain colored",
       details:
-        "Jira is a aaaaaaproprietary issue tracking product developed by Atlassian.",
+        "Jira is a proprietary issue tracking product developed by Atlassian.",
     },
   ];
 
