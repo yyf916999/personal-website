@@ -5,21 +5,21 @@
       company: "Nagrastar LLC",
       period: "JUL 2022 - Present",
       description:
-        "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
+        "Designed and developed multiple full-stack web application. Regularly maintained testing environment and CI/CD pipeline.",
     },
     {
       role: "Co-Founder & CTO",
       company: "Blossoms AI",
       period: "MAR 2023 - APR 2024",
       description:
-        "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
+        "Designed and developed a full-stack web application that integrates AI to help improve students' learning experience by identifying subjects and areas at which the student is lacking.",
     },
     {
-      role: "Intern",
-      company: "123 Inc",
-      period: "2035 - 2035",
+      role: "Apprentice",
+      company: "Tianjin University",
+      period: "MAY 2021 - AUG 2021",
       description:
-        "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
+        "Made a course-evaluation application to help students to have a better idea when course selection time comes.",
     },
   ];
 </script>
