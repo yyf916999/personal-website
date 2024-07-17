@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
-  let name = "Yufan Yang";
-  let tagline = "";
+  let name = "Samuel (Yufan) Yang";
+  let tagline = "Samuel Yang";
   let names = [
     "I am a Full-Stack Software Developer",
     "I Turn Ideas Into Reality",
@@ -37,7 +37,7 @@
 <header>
   <nav>
     <div class="logo">
-      <img id="letter-y" src="/assets/letter-y.png" />{name}
+      <img id="letter-y" src="/assets/letter-y.png" />{tagline}
     </div>
     <div class="nav-links">
       <a href="#about">About</a>
