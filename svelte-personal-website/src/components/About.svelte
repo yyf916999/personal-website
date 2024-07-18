@@ -30,12 +30,14 @@
 <style>
   section {
     padding: 2rem 1rem;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background: white;
   }
 
   h2 {
+    margin-left: 5%;
     margin-bottom: 1rem;
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: bold;
   }
 

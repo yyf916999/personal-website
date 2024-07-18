@@ -113,10 +113,10 @@
 <section id="skills">
   <h2>Skills</h2>
   <div class="skill-content">
-    <div class="skills-description">
+    <!-- <div class="skills-description">
       <p>Some tech-related skills I have learnt and used over the years.</p>
-      <p>Click on each icon for more detailss</p>
-    </div>
+      <p>Click on each icon for more details</p>
+    </div> -->
     <div class="skills-icons">
       <div class="skills-grid">
         {#each skills as skill}
@@ -137,6 +137,12 @@
 {/if}
 
 <style>
+  #skills h2 {
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    font-size: 6rem;
+    font-weight: bold;
+  }
   .skill-content {
     display: flex;
     flex-direction: row;
@@ -169,15 +175,16 @@
 
   .skills-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: 100%;
   }
 
   .skill {
     background-color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -185,12 +192,12 @@
 
   .skill i {
     margin-right: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   section {
     padding: 2rem 1rem;
-    background-color: #f0f0f0;
+    background: white;
   }
 
   h2 {

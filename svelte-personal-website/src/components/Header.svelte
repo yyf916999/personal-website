@@ -64,7 +64,8 @@
 <style>
   header {
     /* background: url("/assets/header-background.jpg") no-repeat center center; */
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background: white;
     background-size: cover;
     color: white;
     text-align: center;
@@ -86,7 +87,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #f0f0f0;
+    background: white;
   }
   nav:after {
     position: absolute;
@@ -108,6 +109,7 @@
     max-width: 1.5rem;
     max-height: 2rem;
   }
+
   .nav-links {
     display: flex;
     gap: 1rem;

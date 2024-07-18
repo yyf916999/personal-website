@@ -5,7 +5,7 @@
 <section id="resume">
   <h2>Resume</h2>
   <div class="pdf-container">
-    <iframe src="/assets/Yufan-Yang-Resume.pdf" width="100%" height="600px"
+    <iframe src="/assets/Samuel-Yang-Resume.pdf" width="100%" height="600px"
     ></iframe>
   </div>
 </section>
@@ -13,7 +13,8 @@
 <style>
   #resume {
     padding: 2rem;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background: white;
     height: 150%;
     max-width: 100%;
   }

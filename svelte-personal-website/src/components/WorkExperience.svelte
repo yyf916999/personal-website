@@ -42,13 +42,13 @@
 <style>
   #work-experience {
     padding: 2rem;
-    background-color: #f9f9f9;
+    background: white;
   }
 
   h2 {
     /* text-align: left; */
-    font-size: 7rem;
-    /* margin-left: 10%; */
+    font-size: 6rem;
+    margin-left: 5%;
     /* margin-bottom: 2rem; */
   }
 
