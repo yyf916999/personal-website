@@ -1,4 +1,12 @@
 <script>
+  let language = [];
+  let skills_temp = [
+    {
+      name: "HTML",
+      icon: "devicon-html5-plain colored",
+      details: "HTML is the standard markup language for creating web pages.",
+    },
+  ];
   let skills = [
     {
       name: "HTML",
@@ -34,6 +42,12 @@
         "Flask is a lightweight WSGI web application framework in Python.",
     },
     {
+      name: "Django",
+      icon: "devicon-django-plain colored",
+      details:
+        "Flask is a lightweight WSGI web application framework in Python.",
+    },
+    {
       name: "C/C++",
       icon: "devicon-cplusplus-plain colored",
       details:
@@ -65,7 +79,7 @@
     },
     {
       name: "Linux",
-      icon: "devicon-linux-plain colored",
+      icon: "devicon-linux-plain",
       details: "Linux is a family of open-source Unix-like operating systems.",
     },
     {
@@ -100,6 +114,12 @@
       icon: "devicon-jira-plain colored",
       details:
         "Jira is a proprietary issue tracking product developed by Atlassian.",
+    },
+    {
+      name: "AWS",
+      icon: "devicon-amazonwebservices-plain colored",
+      details:
+        "C and C++ are general-purpose programming languages that are widely used for system and application software.",
     },
   ];
 
