@@ -51,8 +51,10 @@
     <div class="hero-text">
       <h1>{name}</h1>
       <p class="tagline">{currentName}</p>
-      <a class="resume-button" href="/assets/Yufan-Yang-Resume.pdf" download
-        >Download Resume</a
+      <a
+        class="resume-button"
+        href="/assets/Yufan-Yang-Software Engineer.pdf"
+        download>Download Resume</a
       >
     </div>
     <div class="hero-image">
