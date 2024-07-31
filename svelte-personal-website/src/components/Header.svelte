@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
-  let name = "Samuel (Yufan) Yang";
-  let tagline = "Samuel Yang";
+  let name = "Yufan Yang";
+  let tagline = "Yufan Yang";
   let names = [
     "I am a Full-Stack Software Developer",
     "I Turn Ideas Into Reality",
