@@ -126,7 +126,11 @@
   let selectedSkill = null;
 
   function showDetails(skill) {
-    selectedSkill = skill;
+    if (selectedSkill === skill) {
+      selectedSkill = null; // Close the details if the same skill is clicked again
+    } else {
+      selectedSkill = skill;
+    }
   }
 </script>
 
@@ -198,6 +202,7 @@
     flex-direction: row;
     gap: 1.5rem;
     max-width: 100%;
+    flex-wrap: wrap;
   }
 
   .skill {
