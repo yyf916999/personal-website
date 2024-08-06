@@ -198,6 +198,7 @@
   }
 
   .skills-grid {
+    margin-left: 2.5rem;
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
