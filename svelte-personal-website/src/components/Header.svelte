@@ -37,13 +37,15 @@
 <header>
   <nav>
     <div class="logo">
-      <img id="letter-y" src="/assets/letter-y.png" />{tagline}
+      <img id="letter-y" alt="logo" src="/assets/letter-y.png" />{tagline}
     </div>
     <div class="nav-links">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contacts">Contacts</a>
+      <a href="#skills">Skills</a>
+      <a href="#work-experience">Work Experience</a>
       <a href="#resume">Resume</a>
+      <a href="#videos">Hobby</a>
+      <a href="#contact">Contacts</a>
     </div>
   </nav>
 

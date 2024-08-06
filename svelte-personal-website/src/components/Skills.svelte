@@ -144,7 +144,7 @@
     <div class="skills-icons">
       <div class="skills-grid">
         {#each skills as skill}
-          <div class="skill" on:click={() => showDetails(skill)}>
+          <div class="skill" on:keypress={() => showDetails(skill)}>
             <i class={skill.icon}></i>{skill.name}
           </div>
         {/each}

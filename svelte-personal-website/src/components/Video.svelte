@@ -6,10 +6,6 @@
       url: "https://www.youtube.com/embed/0ILpDTXTmHM",
     },
     {
-      title: "Turn down your volume",
-      url: "/assets/",
-    },
-    {
       title: "I want to learn this next",
       url: "https://www.youtube.com/embed/OMcOAkoa8oM",
     },
@@ -22,6 +18,7 @@
     <div class="video-container">
       <h3>{title}</h3>
       <iframe
+        title="video"
         src={url}
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
